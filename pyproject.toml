@@ -1,2 +1,2 @@
-[tool.pyrefly]
-python-interpreter-path = ".venv/Scripts/python.exe"
+[tool.vercel]
+entrypoint = "backend.main:app"

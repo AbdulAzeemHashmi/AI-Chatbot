@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Chatbot
 
 A production-ready, full-stack AI Chatbot application featuring a fast Python FastAPI backend and a responsive Next.js frontend, powered by the Google Gemini API.
@@ -72,3 +73,6 @@ Open `http://localhost:3000` in your web browser to access the application.
 ## Creator Profile
 
 Developed by [AbdulAzeemHashmi](https://github.com/AbdulAzeemHashmi).
+=======
+# AI-Chatbot
+>>>>>>> e3fe95749c5b787a6d414a3cc2263dc05dea45b4

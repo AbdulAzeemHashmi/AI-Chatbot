@@ -66,17 +66,19 @@ async def chat_endpoint(request: ChatRequest):
 
     try:
         # FIX: Updated to a valid production model name
-        model = genai.GenerativeModel("gemini-2.5-flash")
+        model = genai.GenerativeModel("gemini-1.5-flash")
         
         # Format the chat history for Gemini API
         # Gemini expects history format to have "role" (user/model) and "parts" (list of strings/objects)
         history = []
         for msg in request.messages[:-1]:
             role = "user" if msg.role == "user" else "model"
-            history.append({
-                "role": role,
-                "parts": [msg.content]
-            })
+            history.append(
+                genai.types.content_types.to_content({
+                    "role": role,
+                    "parts": [msg.content]
+                })
+            )
             
         # Start a chat session with the historical messages
         chat_session = model.start_chat(history=history)

@@ -65,14 +65,13 @@ async def chat_endpoint(request: ChatRequest):
         )
 
     try:
-        # Initialize the model using gemini-3.5-flash
-        model = genai.GenerativeModel("gemini-3.5-flash")
+        # FIX: Updated to a valid production model name
+        model = genai.GenerativeModel("gemini-2.5-flash")
         
         # Format the chat history for Gemini API
         # Gemini expects history format to have "role" (user/model) and "parts" (list of strings/objects)
         history = []
         for msg in request.messages[:-1]:
-            # Convert user roles correctly
             role = "user" if msg.role == "user" else "model"
             history.append({
                 "role": role,
@@ -88,7 +87,6 @@ async def chat_endpoint(request: ChatRequest):
         return ChatResponse(response=response.text)
         
     except Exception as e:
-        # Proper error logging and response formatting
         detail_msg = f"Gemini API Error: {str(e)}"
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,

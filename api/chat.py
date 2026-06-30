@@ -56,7 +56,7 @@ class handler(BaseHTTPRequestHandler):
             return
 
         try:
-            model = genai.GenerativeModel("gemini-2.0-flash")
+            model = genai.GenerativeModel("gemini-2.5-flash")
 
             # Build history (all messages except the last one)
             history = []

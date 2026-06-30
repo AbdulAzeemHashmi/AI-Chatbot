@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AI Chatbot
 
 A production-ready, full-stack AI Chatbot application featuring a fast Python FastAPI backend and a responsive Next.js frontend, powered by the Google Gemini API.

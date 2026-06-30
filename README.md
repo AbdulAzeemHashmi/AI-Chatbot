@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # AI Chatbot
 
-A production-ready, full-stack AI Chatbot application featuring a fast Python FastAPI backend and a responsive Next.js frontend, powered by the Google Gemini API.
+A production ready, full stack AI Chatbot application featuring a fast Python FastAPI backend and a responsive Next.js frontend, powered by the Google Gemini API.
 
 ## Project Structure
 
@@ -12,9 +11,9 @@ A production-ready, full-stack AI Chatbot application featuring a fast Python Fa
 
 - Dynamic and responsive sidebar managing multiple chat sessions.
 - State persistence using localStorage to keep history across reloads.
-- Beautiful, premium UI featuring dark theme and smooth micro-animations.
+- Beautiful, premium UI featuring dark theme and smooth micro animations.
 - Autorename chat sessions dynamically based on the first user message.
-- Custom code block renderer with instant copy-to-clipboard functionality.
+- Custom code block renderer with instant copy to clipboard functionality.
 - Fast responses powered by the `gemini-1.5-flash` model.
 - Robust error callout handling with connection recovery.
 
@@ -73,6 +72,3 @@ Open `http://localhost:3000` in your web browser to access the application.
 ## Creator Profile
 
 Developed by [AbdulAzeemHashmi](https://github.com/AbdulAzeemHashmi).
-=======
-# AI-Chatbot
->>>>>>> e3fe95749c5b787a6d414a3cc2263dc05dea45b4

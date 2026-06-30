@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
     // Build history from all messages except the last one
     const history = messages.slice(0, -1).map((msg: ChatMessage) => ({

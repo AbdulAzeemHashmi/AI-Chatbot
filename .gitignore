@@ -17,6 +17,11 @@ out/
 .env.development
 .env.local
 .env.production.local
+# Backend secrets — never commit API keys
+backend/.env
+frontend/.env.local
+frontend/.env.production.local
+
 
 # Python virtual environments & build artifacts
 venv/

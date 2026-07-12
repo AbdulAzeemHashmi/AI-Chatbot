@@ -1,32 +1,32 @@
-# AI Chatbot
+# 🤖 AI Chatbot
 
 A production ready, full stack AI Chatbot application featuring a fast Python FastAPI backend and a responsive Next.js frontend, powered by the Google Gemini API.
 
-## Project Structure
+## 📁 Project Structure
 
-- `backend/`: Python FastAPI application that connects to the Gemini API.
-- `frontend/`: Next.js (App Router, Tailwind CSS, TypeScript) user interface.
+- 🗂️ `backend/`: Python FastAPI application that connects to the Gemini API.
+- 🗂️ `frontend/`: Next.js (App Router, Tailwind CSS, TypeScript) user interface.
 
-## Features
+## ✨ Features
 
-- Dynamic and responsive sidebar managing multiple chat sessions.
-- State persistence using localStorage to keep history across reloads.
-- Beautiful, premium UI featuring dark theme and smooth micro animations.
-- Autorename chat sessions dynamically based on the first user message.
-- Custom code block renderer with instant copy to clipboard functionality.
-- Fast responses powered by the `gemini-1.5-flash` model.
-- Robust error callout handling with connection recovery.
+- 📌 Dynamic and responsive sidebar managing multiple chat sessions.
+- 💾 State persistence using localStorage to keep history across reloads.
+- 🎨 Beautiful, premium UI featuring dark theme and smooth micro animations.
+- 🏷️ Autorename chat sessions dynamically based on the first user message.
+- 📋 Custom code block renderer with instant copy to clipboard functionality.
+- ⚡ Fast responses powered by the `gemini-1.5-flash` model.
+- 🛡️ Robust error callout handling with connection recovery.
 
-## Prerequisites
+## ✅ Prerequisites
 
-- Windows 11 Operating System
-- Node.js (v18.0.0 or later)
-- Python (v3.10 or later)
-- Google Gemini API Key
+- 🪟 Windows 11 Operating System
+- 🟢 Node.js (v18.0.0 or later)
+- 🐍 Python (v3.10 or later)
+- 🔑 Google Gemini API Key
 
-## Setup and Running
+## 🚀 Setup and Running
 
-### 1. Backend Configuration
+### 1️⃣ Backend Configuration
 
 Open a Windows PowerShell or CMD terminal and navigate to the backend directory:
 
@@ -50,9 +50,9 @@ Start the backend development server:
 uvicorn main:app --reload --port 8000
 ```
 
-The API will now be running at `http://127.0.0.1:8000`.
+The API will now be running at `http://127.0.0.1:8000`. ✅
 
-### 2. Frontend Configuration
+### 2️⃣ Frontend Configuration
 
 Open another Windows PowerShell or CMD terminal and navigate to the frontend directory:
 
@@ -67,8 +67,8 @@ Start the frontend development server:
 npm run dev
 ```
 
-Open `http://localhost:3000` in your web browser to access the application.
+Open `http://localhost:3000` in your web browser to access the application. 🎉
 
-## Creator Profile
+## 👤 Creator Profile
 
 Developed by [AbdulAzeemHashmi](https://github.com/AbdulAzeemHashmi).
